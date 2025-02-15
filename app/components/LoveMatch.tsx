@@ -181,7 +181,7 @@ const LoveMatch = () => {
   const captureAndShare = async () => {
     try {
       if (navigator.share) {
-        const shareText = `${name1} & ${name2} are like ${result.names}! Find your match at Love Match ❤️`;
+        const shareText = `${name1} & ${name2} are like ${result.names}! Find your match at Love Match at https://lovematch.learntosolveit.com/ ❤️`;
         await navigator.share({
           title: 'Love Match Results',
           text: shareText,
