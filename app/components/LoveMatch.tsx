@@ -195,7 +195,14 @@ const LoveMatch = () => {
   };
 
   const calculateMatch = () => {
-    const hashString = (name1 + name2).toLowerCase();
+    var hashString;
+
+    if (name1 <= name2) {
+      hashString = (name1 + name2).toLowerCase()
+    } else {
+      hashString = (name2 + name1).toLowerCase();
+    }
+
     let hash = 0;
 
     for (let i = 0; i < hashString.length; i++) {
